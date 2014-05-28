@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>4 lab for TiMP: Исходный файл tree.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">4 lab for TiMP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;list.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;unit.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classtree.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtree.html">tree</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> <a class="code" href="classunit.html">unit</a>* search(<span class="keywordtype">size_t</span> k, <a class="code" href="classunit.html">unit</a>* start, <span class="keywordtype">size_t</span>* max);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classunit.html">unit</a>* base;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> printLeft(<a class="code" href="classunit.html">unit</a>* start, <span class="keywordtype">size_t</span>* max);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> printRight(<a class="code" href="classunit.html">unit</a>* start, <span class="keywordtype">size_t</span>* max);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> printReverse(<a class="code" href="classunit.html">unit</a>* start, <span class="keywordtype">size_t</span>* max);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classtree.html#af43600c14bd4a8d744e7c010a8fee9f8">tree</a>(<span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="classtree.html">tree</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtree.html#aef924a9891df73f2b5ae4b325b2cdbaa">add</a>(<span class="keywordtype">size_t</span> k, <span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">get</span>(<span class="keywordtype">size_t</span> k);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtree.html#a10d9179b0913f899ab4308b6564d5d34">print</a>(<span class="keywordtype">size_t</span> type, <span class="keywordtype">size_t</span> N);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="ttc" id="classtree_html_af43600c14bd4a8d744e7c010a8fee9f8"><div class="ttname"><a href="classtree.html#af43600c14bd4a8d744e7c010a8fee9f8">tree::tree</a></div><div class="ttdeci">tree(int a)</div><div class="ttdoc">Создание дерева и инициализация вершины </div><div class="ttdef"><b>Definition:</b> tree.cpp:6</div></div>
+<div class="ttc" id="classtree_html_a10d9179b0913f899ab4308b6564d5d34"><div class="ttname"><a href="classtree.html#a10d9179b0913f899ab4308b6564d5d34">tree::print</a></div><div class="ttdeci">void print(size_t type, size_t N)</div><div class="ttdoc">Метод для печати всего дерева согласно определённому принципу обхода </div><div class="ttdef"><b>Definition:</b> tree.cpp:65</div></div>
+<div class="ttc" id="classunit_html"><div class="ttname"><a href="classunit.html">unit</a></div><div class="ttdoc">Класс, представляющий определённый узел дерева </div><div class="ttdef"><b>Definition:</b> unit.h:11</div></div>
+<div class="ttc" id="classtree_html_aef924a9891df73f2b5ae4b325b2cdbaa"><div class="ttname"><a href="classtree.html#aef924a9891df73f2b5ae4b325b2cdbaa">tree::add</a></div><div class="ttdeci">void add(size_t k, int a)</div><div class="ttdoc">Добавление правого сына для определённого узла дерева </div><div class="ttdef"><b>Definition:</b> tree.cpp:15</div></div>
+<div class="ttc" id="classtree_html"><div class="ttname"><a href="classtree.html">tree</a></div><div class="ttdoc">Класс, реализующий дерево элементов </div><div class="ttdef"><b>Definition:</b> tree.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по 4 lab for TiMP. Последние изменения: Пт 18 Апр 2014 11:54:32. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
